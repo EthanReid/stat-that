@@ -1,0 +1,22 @@
+// This is a alpha script
+
+	var url = "http://localhost";
+
+	
+ 
+  var ex = $("div.dashboard");
+
+localStorage.setItem(hi);  	
+localStorage.setItem('data', data);
+var data = localStorage.getItem('data');{
+	localStorage.setItem('data', data);
+}
+
+	var ex = 'exX';
+	//localStorage.setItem('exX' + 'ex');
+document.location.href = url;
+	
+	console.log (localStorage.getItem('ex'));
+ document.getElementById("about").innerHTML = localStorage.getItem(hi);
+
+console.log (localStorage.getItem(x));
