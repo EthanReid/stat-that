@@ -1,0 +1,77 @@
+fullVal = 0;
+//var val1 = 0;
+//var val2 = 0
+var y = 0;
+var z= 0;
+var goal = .5;
+var student = 12345;
+var upcomingAssignQuiz=1;
+var fullSummit = 0;
+var tothw=0;
+var totQuiz
+var fullSummithw= 0;
+var hw
+var math = {
+	assn1: "mathhw1",
+	weight1:.40,
+	score1: 9,
+	maxScore1:10,
+	summit1:1,
+	
+	assn2: "mathhw2",
+	weight2:.40,
+	score2: 8,
+	maxScore2:10,
+	summit2:1,
+	
+	assn3: "mathquiz1",
+	weight3:.60,
+	score3:47,
+	maxScore3:50,
+	summit3:1,
+
+	assn4:"mathhw3",
+	weight4:.40,
+	score4: 5,
+	maxScore4:10,
+	summit4:1,
+
+	assn5: "mathquiz2",
+	weight5:.60,
+	score5:30,
+	maxScore5:50,
+	summit5:1,
+}
+fullSummit= math.summit1+ math.summit2+ math.summit3;
+fullSummithw= math.summit1+ math.summit2+ math.summit4;	
+fullSummitQuiz= math.summit3+ math.summit5;
+	
+
+val1 = math.score1/math.maxScore1*math.weight1;
+val2 = math.score2/math.maxScore2*math.weight2;
+val3 = math.score3/math.maxScore3*math.weight3;
+val4 = math.score4/math.maxScore4*math.weight4;
+val5 = math.score5/math.maxScore5*math.weight5;
+
+fullVal = val1+ val2+ val3 + val4 + val5;
+fullValhw = val1+ val2 + val4;
+fullValQuiz= val3 + val5;
+//console.log (val1, val2, val3);
+//document.getElementById("demo").innerHTML =
+//math.score1;
+//val1 = math.score1/math.maxScore1;
+//val1 =9/10;
+totQuiz=fullValQuiz/fullSummitQuiz;
+tothw= fullValhw/fullSummithw;
+console.log (tothw);
+tot= tothw+ totQuiz;
+console.log (totQuiz);
+console.log (tot);
+//(score1/maxScore1)*weight1 = value in class assign1
+y = goal/tot;
+//z= y/math.weight3;
+console.log (y)
+
+//average percent score, include weight of assign, include class weight
+//define goal grade.
+//deturmine scores needed on next "upcoming assing"
